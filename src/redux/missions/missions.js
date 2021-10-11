@@ -9,7 +9,6 @@ const reducer = (state = 10, action) => {
   switch (action.payload) {
     case GET_MISSIONS:
       return { ...state }
-      break;
     default:
       return state;
   }

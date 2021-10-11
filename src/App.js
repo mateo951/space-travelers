@@ -1,13 +1,22 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navigation from './components/navigation/Navigation';
 import Button from './components/Button'
+import Rockets from './components/rockets/Rockets';
+import Missions from './components/missions/Missions';
 
-function App() {
-  return (
-    <header>
-      <h1>Hello MF</h1>
-      <Button />  
-    </header>
-  );
-}
+const App = () => (
+  <Router>
+    <Navigation />
+    <Switch>
+      <Route exact path="/">
+        <Rockets />
+      </Route>
+      <Route exact path="/missions">
+        <Missions />
+      </Route>
+    </Switch>
+  </Router>
+);
 
 export default App;
