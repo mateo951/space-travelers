@@ -5,7 +5,7 @@ import style from './navigation.module.css'
 
 const Navigation = () => (
   <header className={style.header}>
-      <NavLink to="/"><img className={style.logo} src={planetLogo} /></NavLink>
+      <NavLink to="/"><img className={style.logo} src={planetLogo} alt="rocket logo" /></NavLink>
       <NavLink className={style.listitems}  to="/" exact>
         Rockets  
       </NavLink>

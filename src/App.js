@@ -4,6 +4,7 @@ import Navigation from './components/navigation/Navigation';
 import Button from './components/Button'
 import Rockets from './components/rockets/Rockets';
 import Missions from './components/missions/Missions';
+import Profile from './components/profile/Profile';
 
 const App = () => (
   <Router>
@@ -14,6 +15,9 @@ const App = () => (
       </Route>
       <Route exact path="/missions">
         <Missions />
+      </Route>
+      <Route exact path="/profile">
+        <Profile />
       </Route>
     </Switch>
   </Router>
