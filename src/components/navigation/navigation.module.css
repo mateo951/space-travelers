@@ -1,6 +1,6 @@
 header {
   background-color: lightblue;
-  height: 200px;
+  height: 120px;
 }
 
 .listitems {
@@ -19,6 +19,6 @@ header {
   height: 100px;
 }
 
-.active-link {
+.active {
   color: brown;
 }

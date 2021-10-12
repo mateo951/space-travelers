@@ -6,13 +6,13 @@ import style from './navigation.module.css';
 const Navigation = () => (
   <header className={style.header}>
     <NavLink to="/"><img className={style.logo} src={planetLogo} alt="rocket logo" /></NavLink>
-    <NavLink activeClassName="active-link" className={style.listitems} to="/" exact>
+    <NavLink activeClassName="active" className={style.listitems} to="/" exact>
       Rockets
     </NavLink>
-    <NavLink activeClassName="active-link" className={style.listitems} to="/missions">
+    <NavLink activeClassName="active" className={style.listitems} to="/missions">
       Missions
     </NavLink>
-    <NavLink activeClassName="active-link" className={style.listitems} to="/profile">
+    <NavLink activeClassName="active" className={style.listitems} to="/profile">
       My Profile
     </NavLink>
   </header>
