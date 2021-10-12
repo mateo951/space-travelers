@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios';
 
 const apiURL = 'https://api.spacexdata.com/v3/missions';
 const GET_MISSIONS = 'spaceTravelers/missions/GET_MISSIONS';
 const HANDLE_FETCH_ERROR = 'bookStore/books/HANDLE_FETCH_ERROR';
 
-export const getMissions = (missions) => ({
+const getMissions = (missions) => ({
   type: GET_MISSIONS,
   payload: missions,
 });
@@ -19,7 +20,7 @@ export const fetchGetMissions = () => async (dispatch) => {
       .then((response) => {
         const missions = [];
         const { data } = response;
-        Object.entries(data).forEach(([value]) => {
+        Object.entries(data).forEach(([key, value]) => {
           const mission = {
             mission_id: value.mission_id,
             mission_name: value.mission_name,
