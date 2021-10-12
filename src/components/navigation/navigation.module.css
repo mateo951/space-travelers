@@ -1,0 +1,20 @@
+header {
+  background-color: lightblue;
+  height: 120px;
+}
+
+.listitems {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
