@@ -18,3 +18,7 @@ header {
   width: 100px;
   height: 100px;
 }
+
+.active-link {
+  color: brown;
+}
