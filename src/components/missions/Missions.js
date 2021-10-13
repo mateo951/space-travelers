@@ -1,32 +1,33 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchGetMissions } from '../../redux/missions/missions';
-
-import Mission from './Mission';
+/* eslint-disable camelcase */
+import { useSelector } from 'react-redux';
+import MissionItem from './MissionItem';
+import style from './missions.module.css';
 
 const Missions = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchGetMissions());
-  }, []);
   const { missions } = useSelector((state) => state.missions);
-  if (missions === undefined) {
-    return null;
-  }
   return (
     <div>
-      <ul>
-        {
-          missions.map((mission) => (
-            <Mission
-              key={mission.mission_id}
-              mission_id={mission.mission_id}
-              mission_name={mission.mission_name}
-              mission_description={mission.mission_description}
-            />
-          ))
-        }
-      </ul>
+      <table className={style.test}>
+        <tbody>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>.</th>
+          </tr>
+          {
+            missions.map((mission) => (
+              <MissionItem
+                key={mission.mission_id}
+                mission_id={mission.mission_id}
+                mission_name={mission.mission_name}
+                mission_description={mission.mission_description}
+                mission_reserved={mission.reserved}
+              />
+            ))
+          }
+        </tbody>
+      </table>
     </div>
   );
 };
