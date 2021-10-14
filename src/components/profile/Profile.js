@@ -8,9 +8,7 @@ import style from './profile.module.css';
 const Profile = () => {
   const { missions } = useSelector((state) => state.missions);
   const rockets = useSelector((state) => state.rockets);
-  console.log(rockets);
   const reserved = rockets.filter((rocket) => rocket.reserved);
-  console.log(reserved);
 
   const reservedMissons = missions.filter((missions) => missions.reserved);
   return (
