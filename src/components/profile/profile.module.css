@@ -1,0 +1,13 @@
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.colDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3%;
+}

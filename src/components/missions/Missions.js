@@ -1,13 +1,14 @@
 /* eslint-disable camelcase */
 import { useSelector } from 'react-redux';
+import Table from 'react-bootstrap/Table';
 import MissionItem from './MissionItem';
 import style from './missions.module.css';
 
 const Missions = () => {
   const { missions } = useSelector((state) => state.missions);
   return (
-    <div>
-      <table className={style.test}>
+    <div className={style.mainDiv}>
+      <Table striped bordered className={style.test}>
         <tbody>
           <tr>
             <th>Mission</th>
@@ -27,7 +28,7 @@ const Missions = () => {
             ))
           }
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 };

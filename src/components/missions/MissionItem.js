@@ -19,7 +19,7 @@ const MissionItem = ({
     <tr key={mission_id}>
       <td>{mission_name}</td>
       <td>{mission_description}</td>
-      {mission_reserved ? <td>ACTIVE MEMBER</td> : <td>NOT A MEMBER</td>}
+      {mission_reserved ? <td className="badge mx-2 text-uppercase bg-secondary my-0">ACTIVE MEMBER</td> : <td className="badge mx-2 text-uppercase bg-secondary my-0">NOT A MEMBER</td>}
       <td>{mission_reserved ? <button type="button" onClick={() => handleClick(mission_id, 'leave')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> : <button type="button" onClick={() => handleClick(mission_id, 'join')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> }</td>
     </tr>
   );

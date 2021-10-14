@@ -1,5 +1,4 @@
 header {
-  background-color: lightblue;
   height: 120px;
 }
 
@@ -10,15 +9,40 @@ header {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.logoTitle {
+  padding-left: 30px;
+}
+
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  margin-right: 3%;
 }
 
 .active {
   color: brown;
+}
+
+.separation {
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  border: 1px solid lightslategray;
 }
