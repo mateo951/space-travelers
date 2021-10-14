@@ -1,0 +1,11 @@
+
+table {
+  margin: 0;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5% 15%;
+}
