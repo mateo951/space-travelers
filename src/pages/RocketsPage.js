@@ -1,7 +1,7 @@
 import React from 'react';
 import RocketList from '../components/rockets/RocketList';
 
-const Rockets = () => (
+const RocketsPage = () => (
   <>
     <div className="container">
       <div className="inner-container">
@@ -11,4 +11,4 @@ const Rockets = () => (
   </>
 );
 
-export default Rockets;
+export default RocketsPage;

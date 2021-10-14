@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.rocketsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.rocketItem {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin: 1% 0;
+}
+
+.rocketImage {
+  width: 25%;
+  height: 20vh;
+  margin-right: 10px;
+}
+
+.descContainer{
+  width: 80%;
+}
+
+.descContainer p span {
+  background-color: #5bbdd6;
+  font-size: 10px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.descContainer h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.descContainer p {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.submitReserve {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.reserved {
+  color: #b9c1c7;
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid #b9bdc0;
+}

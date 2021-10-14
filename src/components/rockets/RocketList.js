@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { loadRockets } from '../../redux/rockets/rockets';
 import RocketItem from './RocketItem';
+import style from './rockets.module.css';
 
 const RocketList = () => {
   const rockets = useSelector((state) => state.rockets);
@@ -16,7 +17,7 @@ const RocketList = () => {
 
   return (
     <>
-      <ul className="rockets-list">
+      <ul className={style.rocketsList}>
         {rockets.map((rocket) => (
           <RocketItem
             key={rocket.id}
