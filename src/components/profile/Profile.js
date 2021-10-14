@@ -25,7 +25,7 @@ const Profile = () => {
       </div>
       <div className={style.colDiv}>
         <h3>My Rockets</h3>
-        <Table>
+        <Table striped bordered hover>
           <tbody>
             {(reserved.length > 0 && reserved.map((rocket) => (
               <ReservedRockets key={rocket.id} rocketName={rocket.rocket_name} />
