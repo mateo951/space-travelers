@@ -7,12 +7,12 @@ import RocketItem from './RocketItem';
 const RocketList = () => {
   const rockets = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
+  const loadAction = bindActionCreators(loadRockets, dispatch);
 
   useEffect(() => {
-    const loadAction = bindActionCreators(loadRockets, dispatch);
-    loadAction();
-    return null;
-  }, [dispatch]);
+    if (rockets.length === 0) loadAction();
+    return () => null;
+  }, []);
 
   return (
     <>
