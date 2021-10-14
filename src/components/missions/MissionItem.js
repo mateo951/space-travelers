@@ -3,6 +3,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { joinMission, leaveMission } from '../../redux/missions/missions';
+import style from './missionItem.module.css';
 
 const MissionItem = ({
   mission_id, mission_name, mission_description, mission_reserved,
@@ -19,8 +20,8 @@ const MissionItem = ({
     <tr key={mission_id}>
       <td>{mission_name}</td>
       <td>{mission_description}</td>
-      {mission_reserved ? <td className="badge mx-2 text-uppercase bg-secondary my-0">ACTIVE MEMBER</td> : <td className="badge mx-2 text-uppercase bg-secondary my-0">NOT A MEMBER</td>}
-      <td>{mission_reserved ? <button type="button" onClick={() => handleClick(mission_id, 'leave')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> : <button type="button" onClick={() => handleClick(mission_id, 'join')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> }</td>
+      {mission_reserved ? <td className="badge rounded-pill bg-primary text-light m-2">ACTIVE MEMBER</td> : <td className="badge rounded-pill bg-secondary text-light m-2">NOT A MEMBER</td>}
+      <td className={style.bttnwidth}>{mission_reserved ? <button className="btn btn-outline-danger m-2" type="button" onClick={() => handleClick(mission_id, 'leave')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> : <button className="btn btn-outline-secondary m-2" type="button" onClick={() => handleClick(mission_id, 'join')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> }</td>
     </tr>
   );
 };
