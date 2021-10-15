@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission component Use Jest snapshots to test the Missions component renders Missions component as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="inner-container"
+    >
+      <div
+        class="mainDiv"
+      >
+        <table
+          class="test table table-striped table-bordered"
+        >
+          <tbody>
+            <tr>
+              <th>
+                Mission
+              </th>
+              <th>
+                Description
+              </th>
+              <th>
+                Status
+              </th>
+              <th>
+                Action
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

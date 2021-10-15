@@ -1,0 +1,15 @@
+.mainDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.colDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3%;
+}
+
+.table {
+  margin-bottom: 0 !important;
+}
