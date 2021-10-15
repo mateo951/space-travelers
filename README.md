@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+## Space Traveler's Hub  ##
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-## Available Scripts
+Built With
 
-In the project directory, you can run:
+- REACT, REDUX
+- Node.js, Git, Bootstrap,
 
-### `npm start`
+[Live Demo: Netlify](https://space-travelers-jg-mv.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Alt text](./src/media/demo.png?raw=true)
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Git/GitHub;
+- Optional ( IDE installed in your machine ) - recommended IDE: Vscode;
+- Node installed locally;
 
-### `npm run build`
+### Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- To clone this repo:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to where you want to paste the Repo folder;
+  - Type `git clone git@github.com:mateo951/space-travelers.git`;
+  - Open the folder todo-list that was created on your IDE;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- To install all the dependencies in the package-lock.json:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to be inside the math-magicians repo folder;
+  - Run npm install or npm i;
+  
+### Run tests
 
-### `npm run eject`
+- Unit Tests:
+  - `npm run test` or `npm test`
+- Linters Tests:
+  - Eslint: run `npx eslint .`
+  - Stylelint: run `npx stylelint "**/*.{css,scss}"`
+- Run a Live Version of the Dist Folder:
+  - Run `npm start`
+- To Deploy to GH-Pages:
+  - Run `npm run deploy`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Authors ###
+👤 Juan Gonzalez<br>
+GitHub: [@JbirdL86](https://github.com/JbirdL86)<br>
+Twitter: [@JuanLui06498455](https://twitter.com/JuanLui06498455)<br>
+LinkedIn: [@Juan Gonzalez](https://www.linkedin.com/in/juan-luis-0551921aa/)<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👤 Mateo Villagómez<br>
+GitHub: [@mateo951](https://github.com/mateo951)<br>
+Twitter: [@MVGameDev](https://twitter.com/MVGameDev)<br>
+LinkedIn: [@Mateo Villagómez](https://www.linkedin.com/in/mateo-villagómez/)<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Feel free to check the [issues](https://github.com/mateo951/space-travelers/issues) page.
 
-## Learn More
+Show your support
+Give a ⭐️ if you like this project!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📝 License
+This project is MIT licensed.
