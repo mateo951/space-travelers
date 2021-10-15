@@ -20,8 +20,9 @@ const MissionItem = ({
     <tr key={mission_id}>
       <td>{mission_name}</td>
       <td>{mission_description}</td>
-      {mission_reserved ? <td className="badge rounded-pill bg-primary text-light m-2">ACTIVE MEMBER</td> : <td className="badge rounded-pill bg-secondary text-light m-2">NOT A MEMBER</td>}
-      <td className={style.bttnwidth}>{mission_reserved ? <button className="btn btn-outline-danger m-2" type="button" onClick={() => handleClick(mission_id, 'leave')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> : <button className="btn btn-outline-secondary m-2" type="button" onClick={() => handleClick(mission_id, 'join')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW' }</button> }</td>
+      {mission_reserved && (<td className="badge rounded-pill bg-primary text-light m-2">ACTIVE MEMBER</td>)}
+      {!mission_reserved && (<td className="badge rounded-pill bg-secondary text-light m-2">NOT A MEMBER</td>)}
+      <td className={style.bttnwidth}>{(mission_reserved && (<button className="btn btn-outline-danger m-2" type="button" onClick={() => handleClick(mission_id, 'leave')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW'}</button>)) || <button className="btn btn-outline-secondary m-2" type="button" onClick={() => handleClick(mission_id, 'join')}>{mission_reserved ? 'LEAVE MISSION' : 'JOIN NOW'}</button>}</td>
     </tr>
   );
 };
