@@ -26,7 +26,7 @@ exports[`Mission component Use Jest snapshots to test the Missions component ren
                 Status
               </th>
               <th>
-                .
+                Action
               </th>
             </tr>
           </tbody>
