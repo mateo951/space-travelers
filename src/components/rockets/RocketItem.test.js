@@ -9,20 +9,23 @@ const rocket = {
   description: 'This is a description',
   flickr_images: ['imageURL', 'imageURL2', 'imageURL3'],
   reserved: false,
-}
+};
 
-describe('Test rendering', () => { 
+describe('Test rendering', () => {
   test('renders learn react link', () => {
     render(
-      <Provider store={store}><RocketItem
-        key={rocket.id}
-        id={rocket.id}
-        rocketName={rocket.rocket_name}
-        description={rocket.description}
-        flickrImages={rocket.flickr_images}
-        reserved={rocket.reserved} />
-      </Provider>);
+      <Provider store={store}>
+        <RocketItem
+          key={rocket.id}
+          id={rocket.id}
+          rocketName={rocket.rocket_name}
+          description={rocket.description}
+          flickrImages={rocket.flickr_images}
+          reserved={rocket.reserved}
+        />
+      </Provider>,
+    );
     const linkElement = screen.getByText(/Reserve Rocket/i);
     expect(linkElement).toBeInTheDocument();
   });
-})
+});

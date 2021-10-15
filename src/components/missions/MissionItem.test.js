@@ -9,20 +9,25 @@ const mission = {
   mission_name: 'Mission 99',
   mission_description: 'This is a description',
   reserved: false,
-}
+};
 describe('Test rendering', () => {
   test('renders learn react link', () => {
-    render(<Provider store={store}><Table><tbody><MissionItem
-      key={mission.mission_id}
-      mission_id={mission.mission_id}
-      mission_name={mission.mission_name}
-      mission_description={mission.mission_description}
-      mission_reserved={mission.reserved}
-    />
-    </tbody>
-    </Table>
-    </Provider>);
+    render(
+      <Provider store={store}>
+        <Table>
+          <tbody>
+            <MissionItem
+              key={mission.mission_id}
+              mission_id={mission.mission_id}
+              mission_name={mission.mission_name}
+              mission_description={mission.mission_description}
+              mission_reserved={mission.reserved}
+            />
+          </tbody>
+        </Table>
+      </Provider>,
+    );
     const linkElement = screen.getByText(/JOIN NOW/i);
     expect(linkElement).toBeInTheDocument();
   });
-})
+});
