@@ -11,13 +11,13 @@ const Navigation = () => (
         <h1 className={style.logoTitle}>Space Traveler&apos;s Hub</h1>
       </div>
       <div className={style.navlinks}>
-        <NavLink activeClassName="active" className={style.listitems} to="/" exact>
+        <NavLink activeClassName={style.active} className={style.listitems} to="/" exact>
           Rockets
         </NavLink>
-        <NavLink activeClassName="active" className={style.listitems} to="/missions">
+        <NavLink activeClassName={style.active} className={style.listitems} to="/missions">
           Missions
         </NavLink>
-        <NavLink activeClassName="active" className={style.listitems} to="/profile">
+        <NavLink activeClassName={style.active} className={style.listitems} to="/profile">
           My Profile
         </NavLink>
       </div>

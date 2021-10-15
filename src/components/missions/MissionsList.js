@@ -1,11 +1,20 @@
 /* eslint-disable camelcase */
-import { useSelector } from 'react-redux';
-import Table from 'react-bootstrap/Table';
+import { useSelector, useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { useEffect } from 'react';
+import { Table } from 'react-bootstrap';
 import MissionItem from './MissionItem';
 import style from './missions.module.css';
+import { fetchGetMissions } from '../../redux/missions/missions';
 
 const Missions = () => {
+  const dispatch = useDispatch();
   const { missions } = useSelector((state) => state.missions);
+  const loadAction = bindActionCreators(fetchGetMissions, dispatch);
+  useEffect(() => {
+    if (missions.length === 0) dispatch(loadAction);
+  }, []);
+
   return (
     <div className={style.mainDiv}>
       <Table striped bordered className={style.test}>
