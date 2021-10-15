@@ -17,9 +17,10 @@ const Profile = () => {
         <h2>My Missions</h2>
         <Table striped bordered hover>
           <tbody>
-            {reservedMissons.length > 0 ? reservedMissons.map((mission) => (
-              <ReservedMissions key={mission.mission_id} mission_name={mission.mission_name} />
-            )) : <tr><td>You have not join any missions yet</td></tr>}
+            {reservedMissons.length > 0 ? reservedMissons.filter((mission) => mission.reserved)
+              .map((mission) => (
+                <ReservedMissions key={mission.mission_id} mission_name={mission.mission_name} />
+              )) : <tr><td>You haven`t joined any missions yet</td></tr>}
           </tbody>
         </Table>
       </div>
@@ -27,9 +28,10 @@ const Profile = () => {
         <h2>My Rockets</h2>
         <Table striped bordered hover>
           <tbody>
-            {(reserved.length > 0 && reserved.map((rocket) => (
-              <ReservedRockets key={rocket.id} rocketName={rocket.rocket_name} />
-            ))) || <tr><td>You haven`t reserved any rockets yet</td></tr>}
+            {reserved.length > 0 ? reserved.filter((rocket) => rocket.reserved)
+              .map((rocket) => (
+                <ReservedRockets key={rocket.id} rocketName={rocket.rocket_name} />
+              )) : <tr><td>You haven`t reserved any rockets yet</td></tr>}
           </tbody>
         </Table>
       </div>
